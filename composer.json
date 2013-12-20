@@ -20,7 +20,7 @@
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
         "friendsofsymfony/user-bundle": "1.3.*",
-        "vich/uploader-bundle": "0.9.*"
+        "vich/uploader-bundle": "0.9.0"
     },
     "scripts": {
         "post-install-cmd": [

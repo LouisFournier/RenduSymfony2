@@ -1,0 +1,15 @@
+{% extends 'IIMMyBundle::layout.html.twig' %}
+
+{% block content %}
+    <h1>Product creation</h1>
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('product') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock content %}

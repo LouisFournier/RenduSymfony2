@@ -1,0 +1,34 @@
+{% extends 'IIMMyBundle::layout.html.twig' %}
+
+{% block content %}
+    <h1>Article</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>File</th>
+                <td>{{ entity.file }}</td>
+            </tr>
+            <tr>
+                <th>FileName</th>
+                <td>{{ entity.filename }}</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('product') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('product_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock content %}

@@ -1,0 +1,7 @@
+services:
+  product.manager:
+          class: IIM\MyBundle\Manager\ProductManager
+          arguments:
+              - "@doctrine.orm.entity_manager"
+              - IIM\MyBundle\Entity\Product
+
