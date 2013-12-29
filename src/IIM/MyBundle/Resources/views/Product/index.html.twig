@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th>File</th>
+                <th>Content</th>
                 <th>FileName</th>
 
             </tr>
@@ -16,7 +17,9 @@
             <tr>
                 <td><a href="{{ path('product_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td>{{ entity.file }}</td>
+                <td>{{ entity.content }}</td>
                 <td>{{ entity.filename }}</td>
+
 
 
                 <td>

@@ -1,1 +1,38 @@
-default
+{% extends 'IIMMyBundle::layout.html.twig' %}
+
+{% block content %}
+    <h1>Product list</h1>
+
+    <table class="records_list">
+        <thead>
+        <tr>
+            <th>File</th>
+            <th>Content</th>
+            <th>FileName</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.id }}</td>
+                <td>{{ entity.file }}</td>
+                <td>{{ entity.content }}</td>
+                <td>{{ entity.filename }}</td>
+
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('product_create') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+{% endblock content %}
+
+

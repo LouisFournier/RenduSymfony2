@@ -92,4 +92,10 @@ abstract class Manager
     {
         return $this->repository->findAll();
     }
+
+
 }
+
+
+
+
