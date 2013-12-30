@@ -1,9 +1,10 @@
 {% extends 'IIMMyBundle::layout.html.twig' %}
 
 {% block content %}
-    <h1>Product list</h1>
+<div class="panel panel-info">
+    <div class="panel-heading"><h1>File list</h1></div>
 
-    <table class="records_list">
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>File</th>
@@ -20,28 +21,21 @@
                 <td>{{ entity.content }}</td>
                 <td>{{ entity.filename }}</td>
 
-
-
                 <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('product_show', { 'id': entity.id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('product_edit', { 'id': entity.id }) }}">edit</a>
-                    </li>
-                </ul>
+                    <a href="{{ path('product_show', { 'id': entity.id }) }}"><button type="button" class="btn btn-info .btn-xs">show</button></a>
+                    <a href="{{ path('product_edit', { 'id': entity.id }) }}"><button type="button" class="btn btn-warning .btn-xs">edit</button></a>
+
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-        <ul>
-        <li>
+
             <a href="{{ path('product_create') }}">
-                Create a new entry
+                <button type="button" class="btn btn-success">Create a new entry</button>
             </a>
-        </li>
-    </ul>
-    {% endblock content %}
+
+
+</div>
+{% endblock content %}

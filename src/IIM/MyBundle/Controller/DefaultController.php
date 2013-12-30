@@ -26,8 +26,12 @@ class DefaultController extends Controller
 
     public function indexAction()
     {
-        $entities= $this->get('product.manager')->findAll();
+        /*
+        $user = $this->getUser();
+        $entities= $this->get('product.manager')->findBy(['user'=>$user]);
+        */
 
+        $entities= $this->get('product.manager')->findAll();
 
         return array(
             'entities' => $entities,

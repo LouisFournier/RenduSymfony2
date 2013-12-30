@@ -1,0 +1,3 @@
+#product {margin-left: 10px;}
+#product label, textarea,input, select, button {display:block; margin-top: 10px;}
+.panel {padding-bottom: 20px;}

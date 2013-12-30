@@ -1,9 +1,10 @@
 {% extends 'IIMMyBundle::layout.html.twig' %}
 
 {% block content %}
-    <h1>Product list</h1>
+<div class="panel panel-info">
+    <div class="panel-heading"><h1>File list</h1></div>
 
-    <table class="records_list">
+    <table class="table table-striped">
         <thead>
         <tr>
             <th>File</th>
@@ -26,13 +27,10 @@
         </tbody>
     </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('product_create') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
+
+
+
+ </div>
 {% endblock content %}
 
 
