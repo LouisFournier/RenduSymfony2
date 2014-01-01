@@ -44,5 +44,8 @@ class DefaultController extends Controller
 
 
 
-
+/*
+ * $filename = '/chemin/vers/mon/fichier.xls'
+ * LoaderTool::downloadContent($filename);
+ */
 
