@@ -8,8 +8,10 @@
         <thead>
         <tr>
             <th>File</th>
+            <th>Download</th>
             <th>Content</th>
             <th>FileName</th>
+            <th>Link for debug</th>
 
         </tr>
         </thead>
@@ -17,9 +19,10 @@
         {% for entity in entities %}
             <tr>
                 <td>{{ entity.id }}</td>
-                <td>{{ entity.file }}</td>
+                <td><a href="{{ entity.content }}">Télécharger le fichier</a></td>
                 <td>{{ entity.content }}</td>
                 <td>{{ entity.filename }}</td>
+                <td>{{ entity.file }}</td>
 
 
             </tr>

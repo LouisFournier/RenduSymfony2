@@ -21,7 +21,7 @@ abstract class Manager
         $this->objectManager = $om;
         $this->repository = $om->getRepository($class);
  
-        $metadata = $om->getClassMetadata($class);
+        $metadata =  $om->getClassMetadata($class);
         $this->class = $metadata->getName();
     }
  
